@@ -271,8 +271,209 @@ img {
   width: 200px;
   border-radius: .5rem;
 }
+.about__text {
+  text-align: justify; /* This will justify the text */
+}
 
-/* ===== SKILLS =====*/
+/* ===== EXPERIENCE =====*/
+
+.experience__section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience__title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.experience__item {
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.experience__role {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0066cc;
+  margin-bottom: 5px;
+}
+
+.experience__company {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.experience__duration {
+  font-size: 16px;
+  color: #999;
+  margin-bottom: 15px;
+}
+
+.experience__description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.experience__skills {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.experience__skills li {
+  background-color: #0066cc;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.experience__skills li:hover {
+  background-color: #004d99;
+}
+
+/* skill new */
+.skills__section {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills__title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.skills__item {
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skills__category {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0066cc;
+  margin-bottom: 15px;
+}
+
+.skills__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills__list li {
+  background-color: #0066cc;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.skills__list li:hover {
+  background-color: #004d99;
+}
+
+/* gallery */
+
+/* Gallery Section */
+.gallery {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.gallery__title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Gallery Grid */
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  /* Responsive columns */
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Gallery Item */
+.gallery__item {
+  width: 100%;
+  height: 250px;  /* Fixed height for images */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth hover effects */
+}
+
+/* Hover Effect for Gallery Item */
+.gallery__item:hover {
+  transform: scale(1.05);  /* Zoom effect on hover */
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);  /* Stronger shadow effect */
+}
+
+/* Image Styling */
+.gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Ensure image covers the whole container */
+  transition: opacity 0.3s ease;  /* Fade effect on hover */
+}
+
+/* Hover Effect on Image */
+.gallery__item:hover .gallery__image {
+  opacity: 0.8;  /* Slight opacity change when image is hovered */
+}
+
+
+
+/* ===== SKILLS =====
 .skills__container {
   row-gap: 2rem;
   text-align: center;
@@ -340,7 +541,11 @@ img {
 
 .skills__img {
   border-radius: .5rem;
-}
+} */
+
+/* logo */
+
+
 
 /* ===== WORK =====*/
 .work__container {
